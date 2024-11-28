@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Sense</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-questionnaire.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-header">
+                <div class="center-all"></div>
+                <ul class="dynamique-island">
+                    <a href="../#" class="logo"></a>
+                    <div class="header-container">
+                        <li><a href="../index.html#activite">Activité</a></li>
+                        <li><a href="#Apropos">Moodometre</a></li>
+                        <li><a href="../index.html#temoignage">Témoignage</a></li>
+                    </div>
+                   
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-questionnaire">
+            <h1>Questionnaire</h1>
+            <div class="style-questionnaire">
+            <div class="text-questionnaire">
+              <form action="../php/form.php" method="POST" enctype="multipart/form-data">
+
+                <section class="container-email" style="display:block;">
+                    <div style="margin-bottom: 3%;">
+                        <label for="contactChoice1">Renseignez votre email :</label>
+                        <br>
+                        <input type="email" id="contactChoice1" name="email" class="questionEmail"/> 
+                        <br>
+                        <button type="submit" class="email" id="button" style="display:none;">Question suivante</button>
+                    </div>
+                </section>
+
+                <section class="question" style="display:none;">
+                    <p style="margin-bottom: 3%;">1 - En début de journée, vous vous sentez :</p>
+                    <div> 
+                    <input type="radio" id="contactChoice1" name="question1" value="A"class="question-1" />
+                    <label for="contactChoice1">En pleine forme ! </label>
+                    </div>
+                    <div> 
+                    <input type="radio" id="contactChoice2" name="question1" value="B" class="question-1" />
+                    <label for="contactChoice2">Encore très fatigué.e </label>
+                    </div>
+                    <div> 
+                    <input type="radio" id="contactChoice3" name="question1" value="C" class="question-1" />
+                    <label for="contactChoice3">Angoissé.e par la journée qui arrive</label>
+                    </div>
+                    <button type="submit" class="skip">Question suivante</button>
+                </section>
+
+                <section class="question" style="display:none;">
+                    <p style="margin-bottom: 8%;">2 - En journée, vous arrivez à vous concentrez :</p>
+                    <div> 
+                    <input type="radio" id="contactChoice1" name="question2" value="A" class="question-2"/>
+                    <label for="contactChoice1">Oui, parfaitement</label>
+                    </div>
+                    <div> 
+                    <input type="radio" id="contactChoice2" name="question2" value="B" class="question-2"/>
+                    <label for="contactChoice2">Oui, plutôt bien</label>
+                    </div>
+                    <div> 
+                    <input type="radio" id="contactChoice3" name="question2" value="C" class="question-2"/>
+                    <label for="contactChoice3">Non pas du tout</label>
+                    </div>
+                    <button type="submit" class="skip button-rouge">Question suivante</button>
+                </section>
+
+                <section class="question" style="display:none;">
+                    <p style="margin-bottom: 8%;">3 - En journée, vous vous sentez (plusieurs réponses possibles) :</p>
+                    <div> 
+                    <input type="checkbox" id="contactChoice1" name="question3" value="A" class="question-3"/>
+                    <label for="contactChoice1">Parfaitement bien</label>
+                    </div>
+                    <div> 
+                    <input type="checkbox" id="contactChoice2" name="question3" value="B" class="question-3"/>
+                    <label for="contactChoice2">Stressé.e, angoissé.e</label>
+                    </div>
+                    <div> 
+                    <input type="checkbox" id="contactChoice3" name="question3" value="C" class="question-3"/>
+                    <label for="contactChoice3">Fatigué.e</label>
+                    </div>
+                    <button type="submit" class="skip button-jaune">Question suivante</button>
+                </section>
+
+                <section class="question" id="1" style="display:none;">
+                    <p style="margin-bottom: 8%;">4 - Au coucher :</p>
+                    <div> 
+                    <input type="radio" id="contactChoice1" name="question4" value="A" class="question-4"/>
+                    <label for="contactChoice1">J'arrive à m'endormir facilement </label>
+                    </div>
+                    <div> 
+                    <input type="radio" id="contactChoice2" name="question4" value="B" class="question-4"/>
+                    <label for="contactChoice2">Je ne trouve pas le sommeil facilement</label>
+                    </div>
+                    <button type="submit" class="send button-bleu">Envoyer le formulaire</button>
+                </section>
+              </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="../script/script.js"></script>
+    <script src="../script/scriptheader.js"></script>
+</body>
+</html>
