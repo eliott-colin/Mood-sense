@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Sense</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-header-responsive">
+            <img src="img/logo-responsive.svg" alt="Logo mood sense" width="50px">
+            <img src="img/burger.svg" alt="Menu burger">
+        </nav>
+        <nav class="nav-header">
+                <div class="center-all"></div>
+                <ul class="dynamique-island">
+                    <a href="#" class="logo"></a>
+                    <div class="header-container">
+                        <li><a href="#activite">Activité</a></li>
+                        <li><a href="#Apropos">Moodometre</a></li>
+                        <li><a href="#temoignage">Témoignage</a></li>
+                    </div>
+                   
+                </ul>
+                <a href="pages/questionnaire.html" class="questionnaire-a">Questionnaire</a>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        <div class="container-slogan">
+            <div class="img-emotion">
+            </div>
+            <div class="textainer">
+                <h1 style="margin-top: 14%;">Un soutien étudiant, en un clin d'œil !</h1>
+                <p style="width: 75%;">Mood Sense propose des solutions simples et rapides pour le bien-être des étudiants. Destinée aux jeunes adultes en études supérieures, nous avons comme but de recenser les différents moods (humeurs) présents dans ces établissements afin de proposer des solutions visant le confort et la praticité des étudiants.</p>
+            </div>
+            <div class="img-emotion" style="display: none   ;">
+            </div>
+        </div>
+        <div id="activite"></div>
+        <div class="container-vague">
+            <h2 class="h2-vague">Nos activités</h2>
+            <section class="container-activite">
+                <div class="container-sophrologie"><a href="pages/sophrologie.html">
+                    <div class="container-sophrologie-content">
+                        <img src="img/logo-yinyang.svg" alt="Logo représentant le yin et le yang" width="20%">
+                        <p>Sophrologie</p>
+                    </div></a>
+                </div>
+                <div class="container-boxe"><a href="pages/boxe.html">
+                    <div class="container-boxe-content">
+                        <img src="img/logo-boxe.svg" alt="Logo représentant des gants de boxe" width="20%">
+                        <p>Boxe</p>
+                    </div></a>
+                </div>
+                <div class="container-activite-crea"><a href="pages/atelier-creatif.html">
+                    <div class="container-activite-crea-content">
+                        <img src="img/logo-crea.svg" alt="Logo représentant un atelier créatif" width="20%">
+                        <p>Atelier créatif</p>
+                    </div></a>
+                </div>
+            </section>
+        </div>
+        <div class="container-forme-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PdkUWNQZqHY?si=lsOEYTExxl_C53co" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <section class="p-video">
+                <div>
+                    <p style="margin: 0; color: #064058;font-size: 43px;font-weight: 700;">La santé mentale <span style="color: #87CDD7;font-size: 43px;font-weight: 700;"><br>en 3 <br> minutes</span></p>
+                    <div class="p-align">
+                        <img src="img/sante-mentale.svg" alt="Logo illusrant une feuille de définition">
+                        <article class="align-titre-texte-video">
+                            <p class="p-titre-video">C'est quoi la santé mentale</p>
+                            <p class="p-text-video">La santé mentale est la recherche permanente d'un équilibre
+                                entre toutes les dimensions de notre vie : psychique,
+                                physique, sociale, économique, etc.</p>
+                        </article>
+                    </div>
+                    
+                </div>
+                <div>
+                    <div class="p-align">
+                        <img src="img/ameliorer-sante-mentale.svg" alt="Logo illusrant une feuille de définition">
+                        <article class="align-titre-texte-video">
+                            <p class="p-titre-video">Améliorer sa santé mentale </p>
+                            <p class="p-text-video">Rester actif, ne pas s’isoler, faire attention à la surcharge de travail, prendre un temps pour soi chaque jour...</p>
+                        </article>
+                    </div>
+                </div> 
+            </section>
+        </div>
+        <div id="temoignage"></div>
+        <div>
+            <h2 class="h2-avis">Vous en parlez mieux que nous !</h2>
+            <div class="container-avis">
+                <img src="img/illustration.svg" alt="Illusration d'une femme portant des habits de couleurs" class="img-illustration">
+                <div class="slider-container">
+                    <div class="menu">
+                      <label for="slide-dot-1"></label>
+                      <label for="slide-dot-2"></label>
+                      <label for="slide-dot-3"></label>
+                    </div>
+                    
+                    <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                    <img class="slide-img" src="img/avis-1.png">
+              
+                    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                    <img class="slide-img" src="img/avis-2.png">
+                    
+                    <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+                    <img class="slide-img" src="img/avis-4.png">
+              
+                  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <section style="display: flex; justify-content: space-between;align-items: center;padding-left: 2%;padding-right: 2%;">
+            <p style="width: 33%;">Vous n'allez pas bien ? Parlez en :<br>09 72 39 40 50 <br><a href="https://www.suicide-ecoute.fr/">https://www.suicide-ecoute.fr/</a></p>
+            <img src="img/logo-bleu.png" alt="Logo de Mood Sense" width="10%" style="background-color: black;">
+            <div style="width: 25%;display: flex;justify-content: space-around;align-items: center;">
+                <img src="img/logo-instagram.png" alt="Logo instagram">
+                <img src="img/logo-teams.svg" alt="Logo teams" width="7%">
+                <img src="img/logo-mail.png" alt="Logo mail">
+                <img src="img/logo-tiktok.png" alt="Logo tiktok">
+                <img src="img/logo-linkedin.svg" alt="Logo linkedin" width="7%">
+            </div>
+        </section>
+        <p class="footer-text">Mentions légales • Gestions des cookies • Politique de confidentialité</p>
+    </footer>
+<script src="script/scriptheader.js"></script>
+</body>
+</html>
